@@ -1,4 +1,4 @@
-import Blog from '../images/Blog_art.png'
+import React from 'react'
 import Arte from '../images/arte-clasica.jpeg'
 import Arte1 from '../images/arte-clasica1.jpeg'
 import Arte2 from '../images/arte-clasica2.jpeg'
@@ -9,6 +9,7 @@ import Urbana2 from '../images/Urbana2.jpeg'
 import Urbana3 from '../images/Urbana3.jpeg'
 import '../css/Inicio.css'
 import Carousel from '../components/Carrusel';
+import {useTypewriter, Cursor} from 'react-simple-typewriter'
 
 const images = [
     Arte,
@@ -25,11 +26,24 @@ const images2 = [
 ];
 
 function Inicio(){
+
+    const [titulos] = useTypewriter({
+        words: ['Blog-Art'],
+        loop: {},
+        typeSpeed: 200,
+        deleteSpeed: 200,
+    });
+
     return(
         <div className="Inicio">
             <div className='contenedor'>
             <div className='flex flex-col'>
-            <img src={Blog} className='imagen'/>
+                <div className='tutilo_blog'>
+                    <h1 className='h1_blog'><span>{titulos}</span><span className='cursor'><Cursor  cursorStyle='.' /></span></h1>
+                    <h1 className='info'>El arte es la expresión de los más profundos </h1>
+                    <h1 className='info2'>pensamientos a través de la revelación de la belleza.</h1>
+                    <a href="/Obras" className='buton_a'>Compra ahora</a>
+                </div>
                 <div className='cuadro-1 flex '>
                     <div className='ti-tex flex flex-col'>
                         <h1 className='titulo'>Arte clasica</h1>
