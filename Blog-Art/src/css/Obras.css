@@ -4,10 +4,17 @@
 .Mona{display: flex;align-items: center;}
 .Monalisa{height: 230px;width: 230px;padding: 15px;border-radius: 20px;}
 .nombre,.descripcion,.propetario,.precio{padding: 3px 10px 0px 10px;font-size: 15px;color: black;}
-.boton {background: #fff;border: none;padding: 0;display: inline-block;font-size: 15px;font-weight: 600;width: 110px;
-height: 30px;text-transform: uppercase;cursor: pointer; padding-top: 2px;
-transform: skew(-21deg);margin-left: 250px;text-align: center;}
-.boton::before {content: ''; position: absolute;top: 0;bottom: 0;right: 100%;left: 0;background: rgb(20, 20, 20);opacity: 0;
-z-index: -1;transition: all 0.5s;}
-.boton:hover {color: #fff;}
-.boton:hover::before {left: 0;right: 0;opacity: 1;}
+.boton{
+    width: 90px;
+    margin-left: 70%;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: #0026ff; 
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #5b6dd1;
+}

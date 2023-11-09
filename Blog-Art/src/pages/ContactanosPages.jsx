@@ -12,7 +12,7 @@ function Contactanos(){
                         <form className="form">
                             <div className="group">
                                 <input placeholder="‎" type="text" required />
-                                <label htmlFor="name">Name</label>
+                                <label htmlFor="name">Usuario</label>
                             </div>
                             <div className="group">
                                 <input
@@ -22,7 +22,7 @@ function Contactanos(){
                                 name="email"
                                 required
                                 />
-                                <label htmlFor="email">Email</label>
+                                <label htmlFor="email">Correo</label>
                             </div>
                             <div className="group">
                                 <textarea
@@ -32,7 +32,7 @@ function Contactanos(){
                                 rows="5"
                                 required
                                 ></textarea>
-                                <label htmlFor="comment">Comment</label>
+                                <label htmlFor="comment">Comentario</label>
                             </div>
                         <button type="submit">Submit</button>
                     </form>

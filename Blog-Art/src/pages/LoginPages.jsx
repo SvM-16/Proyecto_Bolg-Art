@@ -8,11 +8,11 @@ function Login(){
                 <form className="form2">
                     <label>
                         <input className='input2' placeholder="" type="email" id="email" name="email" required/>
-                        <span className='letra1'>Email</span>
+                        <span className='letra1'>Correo</span>
                     </label>
                     <label>
                         <input className="input2" type="password" placeholder="" required />
-                        <span className='letra1'>Password</span>
+                        <span className='letra1'>Contraseña</span>
                     </label>
                         <button className="boton2">Submit</button>
                 </form>

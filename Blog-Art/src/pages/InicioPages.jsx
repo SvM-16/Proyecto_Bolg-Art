@@ -1,4 +1,3 @@
-import React from 'react'
 import Arte from '../images/arte-clasica.jpeg'
 import Arte1 from '../images/arte-clasica1.jpeg'
 import Arte2 from '../images/arte-clasica2.jpeg'
@@ -30,8 +29,8 @@ function Inicio(){
     const [titulos] = useTypewriter({
         words: ['Blog-Art'],
         loop: {},
-        typeSpeed: 200,
-        deleteSpeed: 200,
+        typeSpeed: 300,
+        deleteSpeed: 300,
     });
 
     return(
@@ -46,7 +45,7 @@ function Inicio(){
                 </div>
                 <div className='cuadro-1 flex '>
                     <div className='ti-tex flex flex-col'>
-                        <h1 className='titulo'>Arte clasica</h1>
+                        <h1 className='titulo9'>Arte clásica</h1>
                         <h2 className='texto'>
                         El arte clásico se refiere a un período artístico que se destacó en la antigua Grecia y Roma, caracterizado por la búsqueda de la belleza ideal y la representación realista de la forma humana. Se centró en la armonía, la proporción y la simetría, influyendo en gran medida en la estética y la arquitectura occidentales.</h2>
                         </div>
@@ -54,7 +53,7 @@ function Inicio(){
                     </div>
                 <div className='cuadro-2 flex '>
                     <div className='ti-tex flex flex-col'>
-                        <h1 className='titulo'>Arte Urbano</h1>
+                        <h1 className='titulo9'>Arte Urbano</h1>
                         <h2 className='texto'>El arte urbano es una forma de expresión artística que se desarrolla en entornos urbanos, como graffiti, murales y esculturas, con el objetivo de transmitir mensajes sociales, políticos o culturales a menudo de manera subversiva o provocadora.</h2>
                     </div>
                     <Carousel images={images2}/>
